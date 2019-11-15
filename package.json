@@ -5,6 +5,8 @@
   "main": "protractor.conf.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
+    "e2e": "protractor protractor.conf.js",
+    "e2e:watch": "watch \"protractor protractor.conf.js\" src --wait=1",
     "test": "protractor protractor.conf.js"
   },
   "keywords": [],
@@ -19,6 +21,7 @@
     "jasmine-spec-reporter": "~4.2.1",
     "path": "^0.12.7",
     "protractor": "~5.4.0",
+    "watch": "^1.0.2",
     "ts-node": "^8.5.0",
     "tslint": "^5.20.1",
     "typescript": "^3.7.2"
