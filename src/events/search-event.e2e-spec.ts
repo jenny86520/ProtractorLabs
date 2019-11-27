@@ -1,6 +1,6 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
 /** [start] 實戰演練：練習複雜 DOM 定位運用 */
-fdescribe('search Angular and goto [Angular 實戰開發] page', () => {
+describe('Class-1116: search Angular and goto [Angular 實戰開發] page', () => {
     // 搜尋 Angular 顯示查詢結果頁
     it('should open search block', async () => {
         await browser.get('/');

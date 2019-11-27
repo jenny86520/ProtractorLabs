@@ -1,6 +1,6 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
 /** [start] 練習克服 NgZone 下無限等待的問題 */
-describe('the user submit a questionnaire', () => {
+describe('Class-1116: the user submit a questionnaire', () => {
     // 開啟問卷頁面
     it('should open questionnaire page', async () => {
         await browser.get('http://localhost:4200/labs/questionnaire');

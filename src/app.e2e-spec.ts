@@ -49,7 +49,7 @@ describe('Class-1116: App', () => {
 /** [end] 使用保哥的 snippets 練習 Jasmine 基本 API 撰寫 (describe, it, expect, toBe, toContain) */
 
 /** [start] 測試 Vuejs.org 搜尋 ssr 的結果包含 Server-side Rendering 字樣 */
-describe('Class-1116: try to goto vue.js website to search ssr and show something', () => {
+xdescribe('Class-1116: try to goto vue.js website to search ssr and show something', () => {
   const url = 'https://vuejs.org/';
   // 開啟 vue.js website
   it('should open vue.js website', async () => {
