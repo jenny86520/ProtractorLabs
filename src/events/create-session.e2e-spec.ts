@@ -1,6 +1,6 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
 /** [start] 實戰演練：練習表單操作2 (回家作業) */
-fdescribe('Class-1116-HW: add a new session', () => {
+describe('Class-1116-HW: add a new session', () => {
     const event1_Url = 'http://localhost:4200/events/1';
     // 開啟第一項活動頁面
     it('should open event1 page', async () => {
