@@ -3,6 +3,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const HtmlReporter = require('protractor-beautiful-reporter');
 
 /**
  * @type { import("protractor").Config }
@@ -68,6 +69,14 @@ exports.config = {
       }
     });
     /** [end] 實戰演練：自動截圖測試 */
+    /** [start] 實戰演練：改用 HtmlReporter 報告 */
+    jasmine.getEnv().addReporter(new HtmlReporter({
+      baseDirectory: 'tmp/screenshots',
+      takeScreenshotOnlyForFailedSpecs: true,
+      preserveDirectory: false}).getJasmine2Reporter()
+    );
+        
+    /** [end] 實戰演練：改用 HtmlReporter 報告 */    
     /**
      * 使用保哥的 snippets
      * @type { import("protractor").ProtractorBrowser }
